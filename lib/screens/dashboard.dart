@@ -6,15 +6,15 @@ class Dashboard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Dashboard"),
+        title: Text('Dashboard'),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
+        children: <Widget>[
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Image.asset("assets/image/bytebank_logo.png"),
+            child: Image.asset('assets/image/bytebank_logo.png'),
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
@@ -29,22 +29,25 @@ class Dashboard extends StatelessWidget {
                   );
                 },
                 child: Container(
-                  padding: EdgeInsets.all(8),
+                  padding: EdgeInsets.all(8.0),
                   height: 100,
                   width: 150,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
+                    children: <Widget>[
                       Icon(
                         Icons.people,
                         color: Colors.white,
-                        size: 24,
+                        size: 24.0,
                       ),
                       Text(
-                        "contatos",
-                        style: TextStyle(color: Colors.white, fontSize: 16),
-                      ),
+                        'Contacts',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16.0,
+                        ),
+                      )
                     ],
                   ),
                 ),

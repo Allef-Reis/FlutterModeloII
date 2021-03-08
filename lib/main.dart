@@ -1,13 +1,17 @@
+import 'package:FlutterModuloII/database/app_database.dart';
+import 'package:FlutterModuloII/screens/dashboard.dart';
 import 'package:FlutterModuloII/screens/contact_form.dart';
 import 'package:FlutterModuloII/screens/contacts_list.dart';
-import 'package:FlutterModuloII/screens/dashboard.dart';
 import 'package:flutter/material.dart';
 
+import 'models/contact.dart';
+
 void main() {
-  runApp(ByteBankApp());
+  runApp(BytebankApp());
 }
 
-class ByteBankApp extends StatelessWidget {
+class BytebankApp extends StatelessWidget {
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,10 +19,11 @@ class ByteBankApp extends StatelessWidget {
         primaryColor: Colors.green[900],
         accentColor: Colors.blueAccent[700],
         buttonTheme: ButtonThemeData(
-            buttonColor: Colors.blueAccent[700],
-            textTheme: ButtonTextTheme.primary),
+          buttonColor: Colors.blueAccent[700],
+          textTheme: ButtonTextTheme.primary,
+        ),
       ),
-      home: ContactForm(),
+      home: Dashboard(),
     );
   }
 }
