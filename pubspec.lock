@@ -82,7 +82,7 @@ packages:
     source: hosted
     version: "1.3.0-nullsafety.3"
   path:
-    dependency: "direct main"
+    dependency: "direct dev"
     description:
       name: path
       url: "https://pub.dartlang.org"
@@ -101,7 +101,7 @@ packages:
     source: hosted
     version: "1.8.0-nullsafety.2"
   sqflite:
-    dependency: "direct main"
+    dependency: "direct dev"
     description:
       name: sqflite
       url: "https://pub.dartlang.org"
